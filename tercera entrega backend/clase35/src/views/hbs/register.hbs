@@ -1,0 +1,45 @@
+<form action="/register" method="post" enctype="multipart/form-data">
+  <div class="login">
+    <span class="login_titulo">Registro de usuario</span>
+    <label class="login_label" for="email">Email</label>
+    <input
+      id="email"
+      type="email"
+      name="email"
+      placeholder="Mail del usuario"
+    />
+    <label class="login_label" for="nombre">Nombre de usuario</label>
+    <input
+      id="nombre"
+      type="text"
+      name="nombre"
+      placeholder="Nombre de usuario"
+    />
+    <label class="login_label" for="password">Contrase&ntilde;a</label>
+    <input
+      id="password"
+      type="password"
+      name="password"
+      placeholder="Contraseña"
+    />
+    <label class="login_domicilio" for="domicilio">Domicilio</label>
+    <input id="domicilio" name="domicilio" placeholder="Domicilio" />
+    <label class="login_edad" for="edad">Edad</label>
+    <input type="number" id="edad" type="edad" name="edad" placeholder="edad" />
+    <label class="login_telefono" for="edad">Tel&eacute;fono: (con c&oacute;digo
+      de &aacute;rea)</label>
+    <input id="telefono" name="numeroTelefono" placeholder="Teléfono" />
+    <label class="login_foto" for="foto">Foto:</label>
+    <input id="foto" type="file" name="foto" accept="image/png" />
+    <button
+      id="login_submit"
+      type="submit"
+      class="btn btn-sucess mt-3 mb-5"
+    >Registrar</button>
+    <a
+      href="/login"
+      type="button"
+      class="btn btn-sucess mt-3 mb-5 inner_link"
+    >Ir a login</a>
+  </div>
+</form>

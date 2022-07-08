@@ -1,0 +1,427 @@
+body {
+  background-color: #dddddd;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+}
+
+a {
+  display: block;
+  font-size: 20px;
+  margin: 5px auto 10px;
+  text-align: center;
+}
+
+/**
+*
+* NAVEGACION
+*
+*/
+
+.navegacion {
+  background-color: #333333;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  justify-content: center;
+}
+
+.navegacion_boton {
+  background-color: #888888;
+  border: 1 solid #000000;
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.navegacion_boton a {
+  color: #000000;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navegacion_boton:hover {
+  background-color: #aaaaaa;
+}
+
+.navegacion_boton--presionado {
+  background-color: #ffff00;
+}
+
+/**
+ **
+ ** CARRITO
+ **
+ */
+
+.carrito_contenido {
+  border-radius: 20px;
+  background-color: #ccc;
+  margin: 15px auto;
+  padding: 10px;
+  max-width: 600px;
+  text-align: center;
+  width: 80%;
+}
+
+.carrito_producto_nombre {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.carrito_producto_descripcion,
+.carrito_producto_cantidad {
+  font-size: 1.2em;
+  margin-top: 15px;
+}
+
+.carrito_producto_carrito {
+  text-align: right;
+}
+
+.carrito_producto_quitar {
+  cursor: pointer;
+  height: 35px;
+  max-height: 35px;
+  min-height: 35px;
+  max-width: 35px;
+  min-width: 35px;
+  width: 35px;
+}
+
+.carrito_vacio {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+.carrito_vacio_etiqueta {
+  color: #666666;
+  font-size: 35px;
+  margin: 15px auto;
+}
+
+.carrito_vacio_agregar {
+  font-size: 35px;
+  margin: 15px auto;
+  text-decoration: none;
+}
+
+.carrito_contenedor_boton {
+  text-align: center;
+  width: 100%;
+}
+
+.carrito_boton {
+  background-color: #00f;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 15px auto;
+  padding: 15px;
+  text-decoration: none;
+  width: 30%;
+}
+
+/**
+ **
+ ** PRODUCTOS
+ **
+ */
+
+.producto_contenido {
+  border-radius: 20px;
+  background-color: #ccc;
+  margin: 15px auto;
+  padding: 10px;
+  max-width: 600px;
+  width: 80%;
+}
+
+.producto_nombre {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.producto_carrito {
+  text-align: right;
+}
+
+.producto_descripcion,
+.producto_stock {
+  font-size: 1.2em;
+  margin-top: 15px;
+}
+
+.producto_agregar {
+  cursor: pointer;
+  height: 35px;
+  max-height: 35px;
+  min-height: 35px;
+  max-width: 35px;
+  min-width: 35px;
+  width: 35px;
+}
+
+/******************************************/
+
+.tabla_productos {
+  margin: 0 auto;
+  max-width: 720px;
+  min-width: 250px;
+  width: 100%;
+  text-align: center;
+}
+
+.form {
+  margin: 0 auto;
+  max-width: 700px;
+  min-width: 300px;
+  width: 100%;
+  text-align: center;
+}
+
+.form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.form input {
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+  margin-top: 15px;
+}
+
+.no_hay_productos {
+  display: block;
+  font-size: 25px;
+  color: #ff0000;
+  text-align: center;
+}
+
+#chat {
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+}
+
+#chat_messages {
+  border-color: #666666;
+  border-style: solid;
+  max-height: 300px;
+  min-height: 300px;
+  overflow-y: scroll;
+  text-align: left;
+}
+
+#chat_messages img {
+  width: 36px;
+  height: 36px;
+}
+
+.chat_message_mail,
+.chat_message_date,
+.chat_message_message {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.chat_message_mail {
+  color: blue;
+  font-style: bold;
+}
+.chat_message_date {
+  color: brown;
+}
+.chat_message_message {
+  color: green;
+  font-style: italic;
+}
+
+.normalizacion_etiqueta {
+  font-size: 20px;
+}
+
+.cartel_bienvenido {
+  align-items: center;
+  background-color: #99ff99;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 15px auto;
+  min-width: 400px;
+  width: 90%;
+}
+
+.cartel_bienvenido--texto {
+  color: #22aa22;
+  font-size: 1.5rem;
+  margin: 15px;
+}
+
+#boton_desloguear {
+  background-color: #ffff55;
+  border: 1px;
+  border-radius: 10px;
+  margin: auto 15px;
+  padding: 8px;
+}
+
+/**
+**
+**  LOGIN
+**
+*/
+
+.login {
+  background-color: #ddddff;
+  margin: 15px auto;
+  min-width: 400px;
+  padding: 20px;
+  width: 90%;
+}
+
+.login label,
+.login input {
+  display: block;
+}
+
+.login label {
+  margin-top: 10px;
+}
+
+.login_titulo {
+  color: #0000ff;
+  display: block;
+  font-size: 3rem;
+  padding: 10px;
+}
+
+.login_label {
+  color: #000000;
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+#username {
+  display: block;
+  margin: 15px auto;
+  padding: 2px;
+  width: 90%;
+}
+
+#login_submit {
+  background-color: #33aa33;
+  border: 1px;
+  border-radius: 10px;
+  color: #ffffff;
+  margin: auto 15px;
+  padding: 8px;
+}
+
+.logout_cartel {
+  background-color: #ddddff;
+  color: #0000ff;
+  font-size: 2rem;
+  margin: 15px auto;
+  min-width: 400px;
+  padding: 20px;
+  width: 90%;
+}
+
+/**
+**
+** ERROR
+**
+ */
+
+.error {
+  background-color: #ff6666;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+  width: 90%;
+}
+
+.error_message {
+  color: #ffffff;
+  display: block;
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+
+#go_back {
+  background-color: #ffff00;
+  border: 1px;
+  border-radius: 10px;
+  color: #000000;
+  cursor: pointer;
+  margin: 15px 15px;
+  padding: 8px;
+}
+
+.inner_link {
+  background-color: #339933;
+  border: 1px;
+  border-radius: 10px;
+  color: #ffffff;
+  display: block;
+  cursor: pointer;
+  margin: 15px 15px;
+  max-width: 100px;
+  padding: 8px;
+  text-decoration: none;
+}
+
+/**
+**
+**  USUARIO
+**
+*/
+
+.usuario_contenedor {
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+.usuario_imagen {
+  height: 90px;
+  width: 90px;
+}
+
+.usuario_tabla_datos {
+  display: table;
+  margin: 0 auto;
+  margin-top: 25px;
+  width: 300px;
+}
+
+.usuario_tabla_fila {
+  display: table-row;
+  gap: 30px;
+}
+
+.usuario_tabla_clave {
+  font-weight: bold;
+}
+
+.usuario_tabla_clave,
+.usuario_tabla_valor {
+  display: table-cell;
+  padding: 5px;
+  text-align: left;
+}

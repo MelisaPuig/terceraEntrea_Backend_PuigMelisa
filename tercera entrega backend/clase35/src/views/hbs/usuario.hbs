@@ -1,0 +1,62 @@
+<nav class="navegacion">
+  <div class="navegacion_boton">
+    <a href="/productos">
+      Productos
+    </a>
+  </div>
+  <div class="navegacion_boton">
+    <a href="/carrito">
+      Carrito
+    </a>
+  </div>
+  <div class="navegacion_boton navegacion_boton--presionado">
+    <a href="/usuario">
+      Usuario
+    </a>
+  </div>
+  <div class="navegacion_boton">
+    <a href="/logout">
+      Salir
+    </a>
+  </div>
+</nav>
+<h1>Usuario</h1>
+
+<div class="usuario_contenedor">
+  <img class="usuario_imagen" src="/public/imgs/usuarios/{{usuario._id}}.png" />
+  <div class="usuario_tabla_datos">
+    <div class="usuario_tabla_fila">
+      <div class="usuario_tabla_clave">
+        Nombre
+      </div>
+      <div class="usuario_tabla_valor">
+        {{{usuario.nombre}}}
+      </div>
+    </div>
+    <div class="usuario_tabla_fila">
+      <div class="usuario_tabla_clave">
+        Edad
+      </div>
+      <div class="usuario_tabla_valor">
+        {{{usuario.edad}}}
+        a&ntilde;os
+      </div>
+    </div>
+    <div class="usuario_tabla_fila">
+      <div class="usuario_tabla_clave">
+        Domicilio
+      </div>
+      <div class="usuario_tabla_valor">
+        {{{usuario.domicilio}}}
+      </div>
+    </div>
+    <div class="usuario_tabla_fila">
+      <div class="usuario_tabla_clave">
+        Tel&eacute;fono
+      </div>
+      <div class="usuario_tabla_valor">
+        {{{usuario.numeroTelefono}}}
+      </div>
+    </div>
+  </div>
+</div>

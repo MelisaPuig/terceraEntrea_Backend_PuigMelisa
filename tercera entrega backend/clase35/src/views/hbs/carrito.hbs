@@ -1,0 +1,60 @@
+<nav class="navegacion">
+  <div class="navegacion_boton">
+    <a href="/productos">
+      Productos
+    </a>
+  </div>
+  <div class="navegacion_boton navegacion_boton--presionado">
+    <a href="/carrito">
+      Carrito
+    </a>
+  </div>
+  <div class="navegacion_boton">
+    <a href="/usuario">
+      Usuario
+    </a>
+  </div>
+  <div class="navegacion_boton">
+    <a href="/logout">
+      Salir
+    </a>
+  </div>
+</nav>
+
+{{#if hayProductos}}
+  <div class="carrito_productos" border="solid">
+    {{#each productos}}
+      <div class="carrito_contenido">
+        <img
+          src="/public/imgs/productos/{{this.producto.foto}}"
+          alt="{{this.producto.nombre}}"
+          style="height: auto; width: 100px;"
+        />
+        <div class="carrito_producto_nombre">{{this.producto.nombre}}</div>
+        <div
+          class="carrito_producto_descripcion"
+        >{{this.producto.descripcion}}</div>
+        <div class="carrito_producto_cantidad">Cantidad:
+          {{this.cantidad}}
+          unidades</div>
+        <div class="carrito_producto_carrito">
+          <div onclick="removeFromCart('{{this.producto._id}}', 1);"><img
+              class="carrito_producto_quitar"
+              src="/public/imgs/quitar.png"
+              alt="Quitar producto"
+              title="Quitar producto"
+            />
+          </div>
+        </div>
+      </div>
+    {{/each}}
+    <div class="carrito_contenedor_boton">
+      <button onclick="buy()" class="carrito_boton">Comprar</button>
+    </div>
+  </div>
+{{else}}
+  <div class="carrito_vacio">
+    <div class="carrito_vacio_etiqueta">No hay productos</div>
+    <a href="/productos" class="carrito_vacio_agregar">Agregar</a>
+  </div>
+{{/if}}

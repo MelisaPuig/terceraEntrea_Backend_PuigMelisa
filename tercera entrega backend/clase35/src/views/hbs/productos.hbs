@@ -1,0 +1,42 @@
+<nav class="navegacion">
+  <div class="navegacion_boton navegacion_boton--presionado">
+    <a href="/productos">
+      Productos
+    </a>
+  </div>
+  <div class="navegacion_boton">
+    <a href="/carrito">
+      Carrito
+    </a>
+  </div>
+  <div class="navegacion_boton">
+    <a href="/usuario">
+      Usuario
+    </a>
+  </div>
+  <div class="navegacion_boton">
+    <a href="/logout">
+      Salir
+    </a>
+  </div>
+</nav>
+
+  <div class="tabla_productos" border="solid">
+    {{#each productos}}
+      <div class="producto_contenido">
+          <img
+            src="/public/imgs/productos/{{this.foto}}"
+            alt="{{this.nombre}}"
+            style="height: auto; width: 100px;"
+          />
+          <div class="producto_nombre">{{this.nombre}}</div>
+          <div class="producto_descripcion">{{this.descripcion}}</div>
+          <div class="producto_stock">Stock: <span class="producto_stock_cantidad_{{this._id}}">{{this.stock}}<span> unidades</div>
+          {{#if this.hayStock}}
+          <div class="producto_carrito">
+              <div onclick="addToCart('{{this._id}}', 1);"><img class="producto_agregar" src="/public/imgs/agregar.png" alt="Comprar producto" title="Comprar producto" /> </div>
+                        </div>
+          {{/if}}
+      </div>
+    {{/each}}
+  </div> 
